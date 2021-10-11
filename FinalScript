@@ -62,7 +62,7 @@ pipeline
         {
             steps{
                 withSonarQubeEnv('SonarQubeDefault') {
-                    bat 'mvn sonar:sonar'
+                    bat 'mvn sonar:sonar -D sonar.login=0427bcd45c1bc01345fbc5189014f95ba8791507'
                 }
             }
         }
